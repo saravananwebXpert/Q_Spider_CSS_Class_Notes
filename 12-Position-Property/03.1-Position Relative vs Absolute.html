@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        border: 1px solid black;
+        margin: 0;
+      }
+      #A {
+        background-color: aquamarine;
+      }
+      #B {
+        background-color: blue;
+      }
+      #C {
+        background-color: chartreuse;
+        position: absolute;
+        top: 5px;
+        left: 900px;
+        width: 500px;
+      }
+      #D {
+        background-color: yellow;
+      }
+
+      #A,
+      #B,
+      #C,
+      #D {
+        font-size: x-large;
+        height: 150px;
+      }
+      #abs {
+        position: relative;
+      }
+      p {
+        height: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="A">Box A</div>
+    <div id="B">Box B</div>
+    <section id="abs">
+      <div id="C">Box C</div>
+      <div id="D">Box D</div>
+    </section>
+    <p></p>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+td {
+  font-size: 30px;
+}
+td,
+th {
+  width: 470px;
+  height: 60px;
+  text-align: center;
+  border: 4px solid;
+}
+table {
+  border-radius: 5px;
+  border-style: double;
+  border: 4px solid black;
+  border-top: 15px red;
+  border-top-style: groove;
+  border-spacing: 30px;
+}
+tr:first-child {
+  background-color: #00ff00;
+  font-size: 40px;
+}
+tr:nth-child(2) {
+  background-color: #cccc26;
+  border-style: dashed;
+}
+tr:nth-child(3) {
+  background-color: #5b88e1;
+}
+tr:nth-child(4) {
+  background-color: #2ce529;
+}
+tr:nth-child(5) {
+  background-color: #df78b6;
+}
+tr:nth-child(6) {
+  background-color: #cbd876;
+}
+tr:last-child {
+  background-color: #00ffff;
+}
+#name {
+  border-right-style: none;
+}
+#sub {
+  border-right-style: none;
+  border-left-style: none;
+}
+#trainer {
+  border-left-style: none;
+}
+#tr2-td1 {
+  border-style: dashed;
+  border-color: #118943;
+  border-width: 10px;
+}
+#tr2-td2 {
+  border-style: dotted;
+  border-color: #e92d14;
+  border-width: 10px;
+}
+#tr2-td3 {
+  border-style: double;
+  border-color: #5b88e1;
+  border-width: 10px;
+}
+#tr3-td1 {
+  border-style: groove;
+  border-color: #db1595;
+  border-width: 30px;
+}
+#tr3-td2 {
+  border-style: hidden;
+}
+#tr3-td3 {
+  border-style: inherit;
+}
+#tr4-td1 {
+  border-style: initial;
+}
+#tr4-td2 {
+  border-style: inset;
+  border-color: #750e8a;
+  border-width: 30px;
+}
+#tr4-td3 {
+  border-style: none;
+}
+#tr5-td1 {
+  border-style: outset;
+  border-color: #d00e4c;
+  border-width: 30px;
+}
+#tr5-td2 {
+  border-style: ridge;
+  border-color: #2a6674;
+  border-width: 30px;
+}
+#tr5-td3 {
+  border-style: solid;
+  border-color: #5ee0b9;
+  border-width: 30px;
+}
+#tr6-td1 {
+  border-style: unset;
+  border-color: #b5ef8e;
+  border-width: 30px;
+}
+#tr6-td2 {
+  border-style: hidden;
+}
+#tr6-td3 {
+  border-style: dashed;
+  border-width: 10px;
+}

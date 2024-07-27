@@ -1,0 +1,27 @@
+div > p::first-line {
+  color: royalblue;
+}
+b > p::first-letter {
+  font-size: x-large;
+}
+p#first {
+  text-indent: 60px;
+}
+p#first::before {
+  content: "hi this is paragraph";
+}
+p#first::after {
+  content: url(./08-Rnature.jpg);
+}
+ul li::marker {
+  color: red;
+  font-size: xx-large;
+}
+p::selection {
+  background-color: blue;
+  color: orange;
+}
+b > #mainpara::selection {
+  background-color: yellowgreen;
+  color: black;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+    <style>
+      /* target all direct child and indirect child */
+      p b {
+        background-color: pink;
+      }
+
+      /* target direct child only */
+      i > u {
+        background-color: olivedrab;
+        color: white;
+      }
+
+      div + i {
+        background-color: yellowgreen;
+      }
+      p ~ u {
+        background-color: sandybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinator Selector:</h1>
+    <ol>
+      <li>Descendent Selector</li>
+      <li>Child Selector</li>
+      <li>Adjacent Sibling Selector</li>
+      <li>General Sibling Selector</li>
+    </ol>
+    <br /><br />
+
+    <h2>Descendent Selector</h2>
+    <p>
+      <b>im 1st direct child for para</b> <br />
+      <b>im 2nd direct child for para</b> <br />
+      <i>hi <b>im 1st indirect child for para</b> hi</i>
+    </p>
+
+    <h2>Child Selector</h2>
+    <i>
+      <strong>im strong tag</strong> <br />
+      <u>im underline tag</u> <br />
+      <u>im underline tag</u> <br />
+      <b><u>im underline tag</u></b>
+    </i>
+
+    <h2>Adjacent Sibling Selector</h2>
+    <div>
+      <div>im div</div>
+      <i>im italic</i> <br />
+      <b>im bold </b> <br />
+      <b>im also bold</b>
+    </div>
+    <i>im italic</i> <br />
+    <b>im bold</b> <br />
+    <i>im also italic</i> <br />
+
+    <h2>General Sibling Selector</h2>
+    <p>
+      <strong>im strong</strong> <br />
+      <u>im underline</u> <br />
+      <u>im also underline</u> <br />
+    </p>
+    <u>im underline</u> <br />
+    <strong>im strong</strong> <br />
+    <u>im underline</u>
+  </body>
+</html>

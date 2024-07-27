@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Gradiant</title>
+    <style>
+      div {
+        border: 3px solid black;
+      }
+      #div1 {
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(
+          to right,
+          rgb(108, 230, 108),
+          rgb(61, 61, 230),
+          orange
+        );
+      }
+      #div2 {
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(
+          to left,
+          rgb(108, 230, 108),
+          rgb(61, 61, 230),
+          orange
+        );
+      }
+      #div3 {
+        height: 300px;
+        width: 100%;
+        background-image: linear-gradient(
+          to top,
+          rgb(108, 230, 108),
+          rgb(61, 61, 230),
+          orange,
+          yellow
+        );
+      }
+      #div4 {
+        height: 400px;
+        width: 100%;
+        background-image: linear-gradient(
+          to bottom,
+          rgb(108, 230, 108),
+          rgb(61, 61, 230),
+          orange,
+          red
+        );
+      }
+      #div5 {
+        height: 800px;
+        width: 100%;
+        background-image: radial-gradient(
+          circle,
+          rgb(108, 230, 108),
+          rgb(61, 61, 230),
+          orange
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <br /><br />
+    <div id="div2"></div>
+    <br /><br />
+    <div id="div3"></div>
+    <br /><br />
+    <div id="div4"></div>
+    <br /><br />
+    <div id="div5"></div>
+    <br /><br />
+  </body>
+</html>

@@ -1,0 +1,20 @@
+div::first-line {
+  background-color: blue;
+  color: rgb(213, 214, 131);
+}
+div::first-letter {
+  font-size: xx-large;
+  color: red;
+}
+div #para1::before {
+  content: url(./07-Rimage.jfif);
+}
+div #para1::after {
+  content: url(./07-Rimage.jfif);
+}
+ul > li::marker {
+  color: yellowgreen;
+}
+div p::selection {
+  background-color: goldenrod;
+}

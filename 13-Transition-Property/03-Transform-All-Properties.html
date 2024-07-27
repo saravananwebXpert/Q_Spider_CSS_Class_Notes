@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Transforms</title>
+    <style>
+      body {
+        border: 3px solid black;
+        height: 1220px;
+      }
+      div {
+        margin-top: 40px;
+        display: flex;
+      }
+      div > p {
+        border: 1px solid black;
+        width: 500px;
+        transition: 2s;
+      }
+      #para1:hover {
+        transform: translate(-120px, 120px);
+      }
+      #para2:hover {
+        transform: rotateZ(60deg);
+      }
+      #para3:hover {
+        transform: scaleX(-1);
+      }
+      #para4:hover {
+        transform: skewX(20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="para1">
+        transform: translate(-120px); moves left side <br />
+        transform: translate(120px); moves right side <br />
+        transform: translateX(100px); moves right side <br />
+        transform: translateY(100px); moves down side <br />
+        transform: translateY(-100px); moves up side <br />
+        transform: translateX(-100px); movse left side <br />
+        transform: translate3d(120px,120px,120px); moves right down z-axis
+        <br />
+        transform: translate3d(-120px,-120px,-120px); moves left up z axis
+        <br />
+        transform: translate3d(-120px,120px,120px); moves left down z axis
+        <br />
+        transform: translate3d(120px,-120px,-120px); moves right top z axis
+        <br />
+      </p>
+
+      <p id="para2">
+        transform: rotate(-10deg); or rotateZ(-10deg) anti clockwise <br />
+        transform: rotate(10deg); or rotateZ(10deg) clockwise<br />
+        transform: rotateX(-10deg); top moving to back, bottom moving to front
+        transform: rotateY(-10deg); left moving to front, right moving to back
+      </p>
+
+      <p id="para3">
+        transform: scale(1.8); become larger <br />
+        transform: scale(0.7); become smaller <br />
+        transform: scale(-0.7); become smaller + 180deg down rotation <br />
+        transform: scaleX(1.7); become wider x-axis <br />
+        transform: scaleX(-1.7); bacome wider x axis + 180 deg left right
+        rotation <br />
+        transform: scaleY(1.7); become wider y axis <br />
+        transform: scaleY(-1.7); become wider y axis + 180 deg down rotation
+        <br />
+      </p>
+
+      <p id="para4">
+        transform: skew(20deg) or skewX(20deg); top moves left side, down moves
+        to right side 20deg <br />
+        transform: skew(-20deg) or skew(-20deg); top moves right side, down
+        moves to left side 20deg <br />
+        transform: skewY(20deg); left moves up , right moves down 20deg <br />
+        transform: skewY(-20deg); left moves down, right moves up 20deg <br />
+        note: <br />
+        no skewZ <br />
+      </p>
+    </div>
+  </body>
+</html>

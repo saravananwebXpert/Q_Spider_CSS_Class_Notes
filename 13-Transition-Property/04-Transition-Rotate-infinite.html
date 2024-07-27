@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      div {
+        height: 300px;
+        width: 700px;
+        margin-top: 50px;
+        border: 1px solid black;
+        background-color: blue;
+        color: white;
+      }
+      body {
+        border: 1px solid black;
+      }
+      div:hover {
+        transform: rotate(10000deg);
+        transition: 10s;
+        transition-duration: 10s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      transition: 10s; complete task in 10s <br />
+      transition-duration: 3s; complete task based on time, it will ignore
+      transition:10s time <br />
+      transition-delay:1s; start task 1s delay <br />
+      transition-timing-function: ease; slow start, then fast, then slow end
+      <br />
+      transition-timing-function: linear; same speed start to end <br />
+      transition-timing-function: ease-in; slow start <br />
+      transition-timing-function: ease-out; slow end <br />
+      transition-timing-function: ease-in-out; slow start and end <br />
+    </div>
+  </body>
+</html>

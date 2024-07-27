@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selector</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      a[href] {
+        border: 5px solid black;
+      }
+      p[id="para1"] {
+        color: yellowgreen;
+      }
+      div[style="background-color:red;"] {
+        color: blue;
+      }
+      i[class="fontstyle"] {
+        background-color: skyblue;
+      }
+      img[alt^="image"] {
+        border: 5px solid yellow;
+      }
+      img[alt$="author"] {
+        border: 10px solid red;
+      }
+      img[alt~="para"] {
+        border: 10px solid rgb(85, 0, 255);
+      }
+      img[alt|="image"] {
+        border: 10px solid rgb(0, 255, 51);
+      }
+      img[alt*="pic"] {
+        border: 10px solid rgb(194, 209, 32);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attribute Selector</h1>
+    <ol>
+      <li>Selector with only attribute</li>
+      <li>Selector with attribute and value</li>
+      <li>Selector with attribute, caret(^)symbol and value</li>
+      <li>Selector with attribute, dollar($)symbol and value</li>
+      <li>Selector with attribute, Tilde(~)symbol and value</li>
+      <li>Selector with attribute, Vertical Bar(|)symbol and value</li>
+      <li>Selector with attribute, star(*)symbol and value</li>
+    </ol>
+    <br />
+    <br />
+
+    <h2>Selector with only attribute</h2>
+
+    <a href="./nature.jpg">Natural</a>
+    <hr />
+
+    <h2>Selector with attribute and value</h2>
+
+    <p id="para1">i am a paragraph 1</p>
+
+    <i class="fontstyle">i am italic</i> <br />
+    <i class="fontstyle">i am italic</i> <br />
+    <b class="fontstyle">i am bold</b> <br />
+    <br />
+
+    <h2>Selector with attribute, caret(^)symbol and value</h2>
+
+    <img src="./nature.jpg" alt="image unavilable" />
+    <img src="./nature.jpg" alt="unavilable image" />
+    <hr />
+    <br />
+
+    <h2>Selector with attribute, dollar($)symbol and value</h2>
+
+    <img src="./author.jpg" alt="authorfamous" />
+    <img src="./author.jpg" alt="famousauthor" />
+    <hr />
+
+    <h1>Selector with attribute, Tilde(~)symbol and value</h1>
+
+    <img src="./book.jpg" alt="para group" />
+    <img src="./book.jpg" alt="form para group" />
+    <img src="./book.jpg" alt="para- group" />
+    <img src="./book.jpg" alt="group para" />
+    <hr />
+    <hr />
+    <h1>Selector with attribute, Vertical Bar(|)symbol and value</h1>
+
+    <img src="./book.jpg" alt="image- group" />
+    <img src="./book.jpg" alt="form image group" />
+    <img src="./book.jpg" alt="image- group" />
+    <img src="./book.jpg" alt="group image" />
+    <hr />
+
+    <h1>Selector with attribute, star(*)symbol and value</h1>
+
+    <img src="./book.jpg" alt="pic-group" />
+    <img src="./book.jpg" alt="form-pic-group" />
+    <img src="./book.jpg" alt="pi c- group" />
+    <img src="./book.jpg" alt="group pic" />
+    <hr />
+  </body>
+</html>

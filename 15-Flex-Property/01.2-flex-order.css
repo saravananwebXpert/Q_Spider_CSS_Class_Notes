@@ -1,0 +1,39 @@
+body {
+  background-color: aliceblue;
+}
+#content {
+  border: 1px solid black;
+  background-color: tomato;
+  color: white;
+  text-align: center;
+}
+
+#container {
+  margin: 50px;
+  border: 2px solid black;
+  height: 430px;
+  background-color: rgb(206, 253, 253);
+  display: flex;
+}
+
+#container > div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid black;
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+#c1 {
+  background-color: blueviolet;
+  order: 5;
+}
+#c2 {
+  background-color: yellowgreen;
+  order: -1;
+}
+#c3 {
+  background-color: violet;
+}

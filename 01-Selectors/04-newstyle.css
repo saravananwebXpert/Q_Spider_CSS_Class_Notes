@@ -1,0 +1,43 @@
+div p {
+  color: blue;
+}
+div > p {
+  background-color: rgb(47, 232, 232);
+}
+div + p {
+  background-color: rgb(212, 255, 0);
+}
+div ~ p {
+  color: rgb(98, 239, 114);
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+img[alt] {
+  border: 5px solid black;
+}
+
+a[href] {
+  background-color: bisque;
+}
+
+img[alt="pictur1"] {
+  border: 5px solid red;
+}
+img[alt^="picture"] {
+  border: 10px solid orange;
+}
+img[alt$="1st"] {
+  border: 10px solid rgb(0, 255, 26);
+}
+img[alt~="para"] {
+  border: 10px solid rgb(168, 11, 235);
+}
+img[alt|="para"] {
+  border: 7px solid yellow;
+}
+img[alt*="para"] {
+  border: 7px solid rgb(222, 90, 14);
+}
+/* comment */

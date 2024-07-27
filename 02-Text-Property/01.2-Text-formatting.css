@@ -1,0 +1,52 @@
+h1,
+p {
+  color: white;
+  background-color: steelblue;
+  height: 50px;
+  border: 2px solid black;
+  text-align: center;
+}
+div h1:first-child {
+  text-transform: capitalize;
+}
+div h1:nth-child(2) {
+  text-transform: lowercase;
+}
+div h1:nth-child(3) {
+  text-transform: uppercase;
+}
+
+#para2 {
+  text-shadow: 4px 3px rgb(7, 223, 61);
+  background-color: red;
+}
+
+#para3 {
+  text-decoration: line-through;
+}
+
+#para4 {
+  text-decoration: underline;
+}
+
+#para5 {
+  text-decoration: overline;
+  letter-spacing: 5px;
+  word-spacing: 50px;
+}
+
+#para6 {
+  line-height: 50px;
+  height: 150px;
+}
+
+#para11 {
+  word-break: break-all;
+  border: 3px solid olivedrab;
+  width: 100px;
+}
+#para12 {
+  width: 100px;
+  border: 5px solid rgb(255, 204, 0);
+  word-wrap: break-word;
+}
